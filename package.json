@@ -1,0 +1,24 @@
+{
+  "name": "airlao-automation-demo",
+  "version": "0.0.1",
+  "description": "automation showcase for Patrick Ivan's Airlao interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui":"playwright test --project=ui-chromium",
+    "test:api":"playwright test --project=api",
+    "test:headed": "playwright test --headed --project=ui-chromium",
+    "test:debug": "PWDEBUG=1 playwright test",
+    "install-playwright": "npx playwright install --with-deps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^26.0.0",
+    "playwright": "^1.61.0",
+    "typescript": "^6.0.3"
+  }
+}
