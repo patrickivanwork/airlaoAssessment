@@ -5,45 +5,51 @@
 This project contains Playwright tests (TypeScript) for AirAlo interview assesment
 
 
-###Prerequisites
+### Prerequisites
 Ensure a relatively new version of Node.js (and Npm) are installed on your system https://nodejs.org/en/download/current
 
 
-###Setup
+### Setup
 In a command line window (CMD/Bash/Powershell) navigate to the root of the project folder (same level with the package.json file ) and run the following commands:
-
+```
 npm install
 npm run install-playwright
+```
 
+### Runing tests (from command line)
 
-
-###Runing tests (from command line)
-
-//run all tests
+run all tests
+```
 npm run test
+```
 
-//Run just the UI tests
+Run just the UI tests
+```
 npm run test:ui
+```
 
-//Run just the UI tests but with headed browser
+Run just the UI tests but with headed browser
+```
 npm run test:headed
+```
 
-//Run just the API tests
+Run just the API tests
+```
 npm run test:api
+```
 
-
-###Results
+### Results
 
 test results will appear in a html file generated inside this folder <playwright-report>
 
 
-###Project Structure
+### Project Structure
 
 This is a Playwright automation project.
 2 subprojects were configured: one to contain the UI automation and the other to contain the API automation
 The configuration of these projects resides in this root level file: <playwright.config.ts>
 
-###UI Automation Task
+### UI Automation Task
 
 For the UI automation, the Page Object Model pattern was used.
 The files inside /pages encapsulate the logic used to navigate the site and ensure elements are ready to be interacted with.
@@ -58,7 +64,7 @@ I opted to parameterize the test inputs in order to be able to try out different
 Another decision point was to not save the price of the selected package onto the class at the time of selection in order not to pollute the POM with test data. I opted instead to identify the selected package and its price based on the visibility of the description element (that gets attached to the package after selection)
 
 
-###API Automation Task
+### API Automation Task
 
 The API test is found here: tests\api\api.spec.ts
 
