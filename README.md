@@ -40,14 +40,14 @@ npm run test:api
 
 ### Results
 
-test results will appear in a html file generated inside this folder <playwright-report>
+test results will appear in a html file generated inside this folder: playwright-report
 
 
 ### Project Structure
 
 This is a Playwright automation project.
 2 subprojects were configured: one to contain the UI automation and the other to contain the API automation
-The configuration of these projects resides in this root level file: <playwright.config.ts>
+The configuration of these projects resides in this root level file: playwright.config.ts
 
 ### UI Automation Task
 
