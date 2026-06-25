@@ -70,6 +70,10 @@ test.describe("API testing",() =>{
                 expect(eSimDetailsResponseObject.meta.message).toBe("success");
 
                 expect(eSimDetailsResponseObject.data).toMatchObject(sim);
+                
+                //Had to add a little trottle to get around getting 429 responses
+                await new Promise(resolve => setTimeout(resolve, 1000)); 
+                console.log(`verifying details of this eSim.iccid: ${sim.iccid}`);
             }
         });
      
